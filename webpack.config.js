@@ -2,12 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: [
-    "babel-polyfill",
-    "./src/js/index.js",
-    "./src/css/styles.scss",
-    "./src/css/tailwind.css",
-  ],
+  entry: ["babel-polyfill", "./src/js/index.js"],
   devServer: {
     contentBase: "./dist",
   },
@@ -15,41 +10,23 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, use: "babel-loader" },
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
         use: [
-          "extract-loader",
-          {
-            loader: "file-loader",
-            options: {
-              name: "styles.css",
-              outputPath: "css",
-            },
-          },
-          {
-            loader: "postcss-loader",
-            options: {
-              plugins: [require("autoprefixer"), require("tailwindcss")],
-            },
-          },
+          "style-loader",
+          "css-loader",
           {
             loader: "sass-loader",
-            options: { implementation: require("sass") },
+            options: { implementation: require("node-sass") },
           },
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         exclude: /node_modules/,
         use: [
-          "extract-loader",
-          {
-            loader: "file-loader",
-            options: {
-              name: "tailwind.css",
-              outputPath: "css",
-            },
-          },
+          "style-loader",
+          "css-loader",
           {
             loader: "postcss-loader",
             options: {

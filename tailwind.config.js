@@ -11,8 +11,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "Helvetica", "Arial", "Verdana", "sans-serif"],
-        "neue-plak": [
-          "Neue Plak",
+        merriweather: [
+          "Merriweather",
           "Helvetica",
           "Arial",
           "Verdana",
