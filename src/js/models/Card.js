@@ -1,5 +1,6 @@
 export default class Card {
-  constructor(name, designer, img, src) {
+  constructor(id, name, designer, img, src) {
+    this.id = id;
     this.name = name;
     this.designer = designer;
     this.img = img;

@@ -19,6 +19,9 @@ module.exports = {
           "sans-serif",
         ],
       },
+      spacing: {
+        "screen-xl": "1280px",
+      },
     },
   },
   variants: {
