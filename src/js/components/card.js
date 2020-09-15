@@ -6,7 +6,7 @@ const renderCard = (card) => {
   const markup = `
     <button type="button" id="${card.id}" class="group text-left focus:outline-none">
       <figure class="h-64 overflow-hidden rounded-lg shadow-md">
-        <img class="w-full object-cover"
+        <img class="w-full h-full object-cover"
           src="${card.img}"
           alt="${card.name}">
       </figure>
