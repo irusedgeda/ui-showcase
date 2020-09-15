@@ -1,7 +1,7 @@
 import cards from "./data/cards";
 import * as cardView from "./components/card";
 import * as budgetView from "./views/budget";
-import * as sassTuneView from "./views/saas-tune";
+import * as photographerFolio from "./views/photographer-folio";
 import * as trackerView from "./views/tracker";
 import * as viewWrapperView from "./views/view-wrapper";
 
@@ -10,7 +10,7 @@ import "../css/styles.scss";
 
 /* ---- GLOBAL VARS ---- */
 let state = {};
-const views = [budgetView, sassTuneView, trackerView];
+const views = [budgetView, photographerFolio, trackerView];
 
 /* ---- CARDS CONTROLLER ---- */
 cardView.renderCards();

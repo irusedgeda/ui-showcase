@@ -10,10 +10,10 @@ export default [
   ),
   new Card(
     "__vvid95621f5e-e8f2-4323-af9b-52bef5fe2813",
-    "SaaS Tune",
-    "Fiverr Client",
-    "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    "Behance"
+    "Photographer Folio",
+    "Clay Boan",
+    "https://static.dribbble.com/users/1236546/screenshots/13362804/media/6456ca96bc4ad50e035c6cb5c7507c15.jpg",
+    "Dribbble"
   ),
   new Card(
     "__vvidd9ff54dc-7868-4986-aee5-5e2f65d7ba0a",

@@ -10,14 +10,9 @@ module.exports = {
         "twitter-blue": "#1da1f2",
       },
       fontFamily: {
-        inter: ["Inter", "Helvetica", "Arial", "Verdana", "sans-serif"],
-        merriweather: [
-          "Merriweather",
-          "Helvetica",
-          "Arial",
-          "Verdana",
-          "sans-serif",
-        ],
+        "cinzel-decorative": ["Cinzel Decorative", "cursive"],
+        "lime-light": ["Limelight", "cursive"],
+        "poiret-one": ["Poiret One", "cursive"],
       },
       spacing: {
         "screen-xl": "1280px",
