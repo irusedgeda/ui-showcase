@@ -1,5 +1,5 @@
 import cards from "../data/cards";
-import { elements } from "../config";
+import { elements } from "../utils/base";
 
 const renderCard = (card) => {
   card.setAttributes();
